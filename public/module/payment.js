@@ -1,12 +1,10 @@
-var Payment = /** @class */ (function () {
-    function Payment(recipient, deteils, amount) {
+export class Payment {
+    constructor(recipient, deteils, amount) {
         this.recipient = recipient;
         this.deteils = deteils;
         this.amount = amount;
     }
-    Payment.prototype.format = function () {
-        return this.recipient + " is owed \u00A3" + this.amount + " for " + this.deteils;
-    };
-    return Payment;
-}());
-export { Payment };
+    format() {
+        return `${this.recipient} is owed £${this.amount} for ${this.deteils}`;
+    }
+}

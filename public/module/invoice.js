@@ -1,12 +1,12 @@
-var invoice = /** @class */ (function () {
-    function invoice(client, deteils, amount) {
+var Invoice = /** @class */ (function () {
+    function Invoice(client, deteils, amount) {
         this.client = client;
         this.deteils = deteils;
         this.amount = amount;
     }
-    invoice.prototype.format = function () {
-        return this.client + " owes $" + this.amount + " for " + this.deteils;
+    Invoice.prototype.format = function () {
+        return this.client + " owes \u00A3" + this.amount + " for " + this.deteils;
     };
-    return invoice;
+    return Invoice;
 }());
-export { invoice };
+export { Invoice };

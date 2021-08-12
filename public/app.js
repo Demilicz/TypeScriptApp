@@ -1,2 +1,11 @@
-import { invoice } from './module/invoice.js';
-console.log(invoice);
+var form = document.querySelector(".new-item-form");
+var type = document.querySelector("#type");
+var toFrom = document.querySelector("#tofrom");
+var details = document.querySelector("#details");
+var amount = document.querySelector("#amount");
+console.log(toFrom);
+console.log(details);
+console.log(type);
+console.log(amount);
+console.log(form);
+export {};
